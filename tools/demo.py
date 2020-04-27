@@ -8,9 +8,9 @@ from tools.test import *
 
 parser = argparse.ArgumentParser(description='PyTorch Tracking Demo')
 
-parser.add_argument('--resume', default='SiamMask_DAVIS.pth', type=str,
+parser.add_argument('--resume', default='../pth/SiamMask_DAVIS.pth', type=str,
                     metavar='PATH',help='path to latest checkpoint (default: none)')
-parser.add_argument('--config', dest='config', default='config_davis.json',
+parser.add_argument('--config', dest='config', default='../experiments/siammask_sharp/config_davis.json',
                     help='hyper-parameter of SiamMask in json format')
 parser.add_argument('--base_path', default='../data/tennis', help='datasets')
 parser.add_argument('--cpu', action='store_true', help='cpu mode')
